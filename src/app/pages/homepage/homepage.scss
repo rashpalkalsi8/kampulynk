@@ -1,0 +1,145 @@
+.main-logo {
+    max-width: 100px;
+}
+
+.mgn {
+	margin-bottom: 150px;
+}
+
+.bnr-txt {
+    color: black;
+}
+
+.sec-title2 {
+    color: black;
+    padding-bottom: 10px;
+}
+
+.class-info {
+    height: 224px;
+}
+
+.crt-btn {
+	
+	padding: 5px;
+	border: 2px solid #2a7ec1;
+	background: white !important;
+}
+
+.course-section .courses-list .course-card:before {
+	top: -50px;
+	height: 300px;
+}
+
+.masonary {
+	li {
+		padding: 0 9.5px;
+		margin-bottom: 19px;
+		img {
+			width: 100%;
+			border-radius: 20px;
+			object-fit: cover;
+			height: 100%;
+		}
+		&.width1 {
+			width: 199px;
+			height: 210px;
+			margin-top: 190px;
+		}
+		&.width2 {
+			width: 297px;
+			height: 360px;
+		}
+		&.width3 {
+			width: 197px;
+			height: 290px;
+			margin-top: 20px;
+		}
+		&.width4 {
+			width: 180px;
+			margin-top: 60px;
+			img {
+				width: 94px;
+				height: 87px;				
+			}
+		}
+		&.width5 {
+			width: 297px;
+			height: 192px;
+			padding-left: 30px;
+		}
+		&.width6 {
+			width: 198px;
+			height: 240px;
+			margin-top: -45px;
+		}
+		&.width7 {
+			width: 198px;
+			height: 240px;
+			margin-top: 0;
+		}
+		&.width8 {
+			width: 80px;
+			height: 64px;
+			margin-top: 0;
+		}
+		&.width9 {
+			width: 199px;
+			height: 190px;
+		}
+		&.width10 {
+			width: 99px;
+			height: 72px;
+		}
+	}
+}
+
+.course-card h3 {
+    margin-bottom: -15px !important; 
+    margin-top: 0px !important;
+}
+
+.stats {
+    color: #2a7ec1;
+}
+
+.blog-post {
+    display: flex;
+    flex-direction: column;
+    height: 100%;             // Make full height to align items
+  
+    .blog-thumbnail {
+      overflow: hidden;
+      img {
+        width: 100%;
+        height: auto;         // Preserve aspect ratio, no cropping
+        object-fit: contain;  // Or 'cover' if you prefer cropping but centered
+        max-height: 200px;    // Set max height as needed to avoid giant images
+      }
+    }
+  
+    .blog-info {
+      flex-grow: 1;           // Make content take remaining height
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 15px;
+    }
+  
+    p {
+      margin-bottom: 1rem;
+    }
+  
+    .read-more {
+      align-self: flex-start;
+    }
+  }
+  .owl-carousel .owl-item {
+    display: flex !important;
+    height: auto !important;
+  }
+  
+  .owl-carousel .owl-stage-outer {
+    min-height: 350px;  // Adjust to height of your blog content + image
+  }
+    
