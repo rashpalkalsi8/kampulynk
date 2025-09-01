@@ -1174,6 +1174,35 @@ footer {
 	}
 }
 
+
+.bubble {
+	animation: float 6s ease-in-out infinite;
+	position: relative;
+  }
+  
+  
+  
+  /* Bubble animation keyframes */
+  @keyframes float {
+	0% {
+	  transform: translate(0, 0);
+	}
+	25% {
+	  transform: translate(10px, -20px);
+	}
+	50% {
+	  transform: translate(-10px, -40px);
+	}
+	75% {
+	  transform: translate(10px, -20px);
+	}
+	100% {
+	  transform: translate(0, 0);
+	}
+  }
+
+  
+
 //  BENIFIT SECTION 
 
 .benifit-section {
