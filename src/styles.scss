@@ -15,6 +15,10 @@
 @import 'assets/scss/sections/_header.scss';
 
 
+.btn-default i{
+	left: -10px !important;
+}
+
 .icon-image {
 	width: 25px;
 	max-width: 25px;
@@ -226,6 +230,47 @@
 	}
 }
 
+.sec-title > h2:before {
+	display: none;
+}
+
+.animated-btn {
+	color: #fff !important;
+    position: relative;
+    overflow: hidden;
+	border-radius: 50px !important;
+    padding-right: 50px; /* give room for icon to slide */
+    transition: all 0.3s ease;
+    background-color: #135e9e !important; /* light default button background */
+    border: 1px solid #ccc;
+  }
+
+  .animated-btn .icon {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left 0.4s ease;
+  }
+
+  .animated-btn .text {
+    padding-left: 40px; /* to make space for icon */
+  }
+
+  .animated-btn:hover .icon {
+    left: calc(100% - 25px); /* move icon to far right */
+  }
+
+ .btn:hover .text {
+	transition: all 0.3s ease;
+	margin-left: -25px;
+	margin-right: 25px;
+ }
+
+ .btn .text {
+	transition: all 0.3s ease;
+ }
+
 
 //  SEC TITLE
 
@@ -246,7 +291,7 @@
 			left: -70px;
 			width: 114px;
 			height: 108px;
-			background-image: url(../src/assets/img/sec-bg.png);
+			// background-image: url(../src/assets/img/sec-bg.png);
 			background-repeat: no-repeat;
 			z-index: -1;
 		}
@@ -262,7 +307,8 @@
 } 
 
 .main-logo {
-    max-width: 100px;
+	max-width: 170px !important;
+    margin-bottom: -10px;
 }
 
 .mgn {
@@ -1199,6 +1245,11 @@ footer {
 	100% {
 	  transform: translate(0, 0);
 	}
+  }
+
+
+  .social-links li a {
+	background: #1677ff !important;
   }
 
   
@@ -2534,6 +2585,10 @@ footer {
 	}
 }
 
+header .header-content {
+	padding: 26px 0 10px !important;
+}
+
 .teacher-col {
 	margin-top: 50px;
 	.teacher-thumb {
@@ -3202,6 +3257,10 @@ transition-duration: 3s;}
 	}
 }
 
+.main-banner .banner-text > h2 span {
+	font-size: 36px !important;
+}
+
 
 //  RESPONSIVE 
 
@@ -3214,7 +3273,7 @@ transition-duration: 3s;}
 @media only screen and (max-width: 1200px) {
 	header .navigation-bar nav ul li {margin-right: 36px;}
 	header .header-content .contact-add {flex: 0 0 67%;max-width: 67%;}
-	.main-banner .banner-text > h2 {font-size: 54px;line-height: 72px;}
+	.main-banner .banner-text > h2 {font-size: 32px;line-height: 72px;}
 	.about-us-section {padding: 35px 0 100px;}
 	.classes-section {padding-bottom: 50px;}
 	.teachers-section {padding: 45px 0 70px;}
