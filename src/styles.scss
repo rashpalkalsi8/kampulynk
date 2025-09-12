@@ -15,6 +15,23 @@
 @import 'assets/scss/sections/_header.scss';
 
 
+
+.teacher-imgs {
+	width: 350px;
+	height: 525px;
+	object-fit: cover;
+  }
+
+  
+  
+.icon-vision {
+	background-color: #68ad3c;
+}
+
+.classes-section .classes-col .class-thumb .crt-btn {
+	display: none;
+}
+
 .btn-default i{
 	left: -10px !important;
 }
@@ -239,37 +256,32 @@
     position: relative;
     overflow: hidden;
 	border-radius: 50px !important;
-    padding-right: 50px; /* give room for icon to slide */
-    transition: all 0.3s ease;
-    background-color: #135e9e !important; /* light default button background */
+    padding-right: 50px;
+    background-color: #1677ff !important;
     border: 1px solid #ccc;
-  }
+    display: inline-block;
+}
 
-  .animated-btn .icon {
+.animated-btn .icon {
     position: absolute;
-    left: 15px;
     top: 50%;
     transform: translateY(-50%);
-    transition: left 0.4s ease;
-  }
+    animation: move-icon 2s linear infinite;
+}
 
-  .animated-btn .text {
-    padding-left: 40px; /* to make space for icon */
-  }
+@keyframes move-icon {
+    0% {
+        left: 15px;
+    }
+    100% {
+        left: calc(100% - 25px);
+    }
+}
 
-  .animated-btn:hover .icon {
-    left: calc(100% - 25px); /* move icon to far right */
-  }
+.animated-btn .text {
+    padding-left: 40px;
+}
 
- .btn:hover .text {
-	transition: all 0.3s ease;
-	margin-left: -25px;
-	margin-right: 25px;
- }
-
- .btn .text {
-	transition: all 0.3s ease;
- }
 
 
 //  SEC TITLE
@@ -513,7 +525,7 @@
 				}
 				a {
 					display: inline-block;
-					color: #575757;
+					color: #575757 !important;
 					font-size: 14.23px;
 					padding-left: 7px;
 					font-weight: 600;
@@ -872,8 +884,8 @@
 			right: 0;
 			width: 78px;
 			height: 100px;
-			background-image: url(../src/assets/img/circle5.png);
-			background-repeat: no-repeat;
+			background-image: none;
+			background-repeat: no-repeat !important;
 		}
 		.newsz-ltr-text {
 			> h2 {
@@ -1037,12 +1049,12 @@ footer {
 //  PAGER SECTION 
 
 .pager-section {
-	background: url(../src/assets/img/pager-bg.png), #f2f7fd;
+	background: #f2f7fd !important;
 	background-repeat: no-repeat;
 	background-position: right center;
 	padding: 75px 0 85px;
 	&.blog-version {
-		background-image: url(../src/assets/img/abt-bg.png);
+		
 		padding: 169px 0 242px;
 		position: relative;
 		background-position: center;
@@ -1139,7 +1151,7 @@ footer {
 		}
 	}
 	.page-titlee {
-		color: #f37335;
+		color: #1677ff !important;
 		font-size: 162.6px;
 		font-weight: 600;
 		opacity: 0.10;
@@ -3551,3 +3563,6 @@ transition-duration: 3s;}
 }
 
 
+.newsletter-section .newsletter-sec:after {
+	display: none;
+}
